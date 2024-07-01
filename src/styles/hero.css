@@ -57,7 +57,7 @@
 }
 
 #hero .logo-box {
-    width: 90%;
+    width: 100%;
     max-width: 800px; /* Ajustar según la necesidad */
     height: auto;
 }
@@ -74,10 +74,10 @@
 
 @media (max-width: 992px) {
     #hero h2 {
-        font-size: 60px;
+        font-size: 80px;
     }
     #hero h3 {
-        font-size: 35px;
+        font-size: 50px;
     }
 }
 
@@ -86,28 +86,36 @@
         flex-direction: column;
     }
     #hero h2 {
-        font-size: 50px;
+        font-size: 70px;
     }
     #hero h3 {
-        font-size: 30px;
+        font-size: 45px;
+    }
+    #hero .logo-container {
+        margin-top: -200px;
+        pointer-events: none; /* Desactiva los eventos de clic */
     }
 }
 
 @media (max-width: 576px) {
     #hero   h2 {
-        font-size: 40px;
+        font-size: 60px;
     }
     #hero  h3 {
-        font-size: 25px;
+        font-size: 40px;
+    }
+    #hero .logo-container {
+        margin-top: -100px;
+        pointer-events: none; /* Desactiva los eventos de clic */
     }
 }
 
 @media (max-width: 400px) {
     #hero h2 {
-        font-size: 35px;
+        font-size: 50px;
     }
     #hero  h3 {
-        font-size: 20px;
+        font-size: 30px;
     }
 }
 

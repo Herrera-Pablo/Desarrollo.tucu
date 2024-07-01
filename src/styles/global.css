@@ -1,3 +1,4 @@
+/* Importación de fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
@@ -12,10 +13,22 @@
 
 html, body {
     scroll-behavior: smooth;
+    overflow-x: hidden; /* Evita el scroll horizontal */
 }
 
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-}  
+}
+
+.container-links-app, .container-section-app {
+    width: 100%;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+/* Revisa los estilos específicos para asegurarte de que no haya desbordamiento */
+section {
+    width: 100vw; /* Asegura que las secciones no se desborden del viewport */
+    overflow-x: hidden;
+}

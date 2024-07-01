@@ -20,9 +20,8 @@ import 'animate.css';
 
 const App = () => {
     return (
-
         <Router>
-            <div>
+            <div className="container-links-app">
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/page1" element={<Page1 />} />
@@ -33,17 +32,15 @@ const App = () => {
                 </Routes>
             </div>
         </Router>
- 
     );
 };
 
 const HomePage = () => {
     return (
-
-        <div>
+        <div className="container-section-app">
             <section id="header">
                 <Header />
-                </section>
+            </section>
             <section id="home">
                 <Hero />
             </section>
@@ -73,7 +70,6 @@ const HomePage = () => {
             </section>
             <Footer />
         </div>
-
     );
 };
 
