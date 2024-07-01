@@ -1,0 +1,134 @@
+#hero {
+    height: 100vh;
+    background-color: rgba(44, 64, 97, 0.99); /* Fondo blanco con un pequeño tono opaco */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hero .left-content,
+#hero .right-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero .text-box {
+    text-align: center; /* Cambiado a izquierda */
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#hero h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    font-style: normal;
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+#hero h3 {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: left;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    margin: 0;
+    margin-top: 20px;
+    color: #ffc87b;
+    text-shadow: 2px 4px 4px black;
+}
+
+#hero .logo-container {
+    pointer-events: none; /* Desactiva los eventos de clic */
+}
+
+#hero .logo-box {
+    width: 90%;
+    max-width: 800px; /* Ajustar según la necesidad */
+    height: auto;
+}
+
+/* Breakpoints para dispositivos más pequeños */
+@media (max-width: 1200px) {
+    #hero h2 {
+        font-size: 80px;
+    }
+    #hero h3 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    #hero h2 {
+        font-size: 60px;
+    }
+    #hero h3 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+    }
+    #hero h2 {
+        font-size: 50px;
+    }
+    #hero h3 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    #hero   h2 {
+        font-size: 40px;
+    }
+    #hero  h3 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    #hero h2 {
+        font-size: 35px;
+    }
+    #hero  h3 {
+        font-size: 20px;
+    }
+}
+
+#hero .animated-up-down {
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}

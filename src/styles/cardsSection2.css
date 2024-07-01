@@ -1,0 +1,8 @@
+#cards2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #c4c4c4;
+}

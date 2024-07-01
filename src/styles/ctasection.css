@@ -1,0 +1,34 @@
+/* CTASection.css */
+#cta {
+    background: #27ae60;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+    height: 100vh;
+}
+
+#cta h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#cta p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#cta button {
+    background: #fff;
+    color: #27ae60;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+#cta button:hover {
+    background: #f0f0f0;
+    color: #27ae60;
+}

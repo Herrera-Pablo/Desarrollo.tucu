@@ -1,0 +1,58 @@
+nav {
+  position: fixed;
+  top: 0.3rem;
+  left: 0;
+  right: 0;
+  width: 90%;
+  margin: auto;
+  padding: 0.1rem 1rem;
+  box-shadow: 0 0 10px #0005;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro para resaltar */
+  overflow: hidden;
+  z-index: 100;
+}
+
+nav a {
+  position: relative;
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  color: #fff; /* Color de texto blanco */
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 1rem; /* Asegura un tamaño de fuente adecuado */
+  transition: all 0.3s; /* Transición suave para el hover */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Sombra de texto */
+}
+
+nav a:hover {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 1); /* Sombra brillante al pasar el mouse */
+  color: #8ad4ff; /* Cambia el color del texto al pasar el mouse */
+}
+
+nav .progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.20rem;
+  background-image: linear-gradient(to right, #8ad4ff, #fa7196);
+  border-radius: 0.1rem;
+  animation: progressMove linear both;
+  animation-timeline: scroll(block root);
+}
+
+@keyframes progressMove {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 105%;
+  }
+}

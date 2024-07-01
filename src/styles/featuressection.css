@@ -1,0 +1,99 @@
+#features {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+    min-height: 100vh;
+    font-family: 'Philosopher', sans-serif;
+    color: #333;
+}
+
+#features h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.features-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-column {
+    background: #fff;
+    background-size: 150px; /* Set the background size */
+    background-repeat: no-repeat; /* No repeat for the background image */
+    background-position: bottom right; /* Position the background image */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    text-align: left;
+    position: relative;
+}
+
+.feature-column:nth-child(1) {
+    background-image: url('../assets/img/fast.png'); /* Background image for the first column */
+}
+
+.feature-column:nth-child(2) {
+    background-image: url('../assets/img/payment.png'); /* Background image for the second column */
+}
+
+.feature-column:nth-child(3) {
+    background-image: url('../assets/img/redes.png'); /* Background image for the third column */
+}
+
+.feature-column h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #27ae60;
+}
+
+.feature-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.feature-column li {
+    font-size: 1.2em;
+    margin: 15px 0;
+    position: relative;
+    padding-left: 30px;
+    line-height: 1.5;
+}
+
+.feature-column li::before {
+    content: "✓";
+    color: #27ae60;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.contact-button {
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.contact-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button a:hover {
+    background-color: #219150;
+}

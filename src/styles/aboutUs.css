@@ -1,0 +1,9 @@
+#about-us {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+    text-align: center;
+}

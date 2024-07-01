@@ -1,0 +1,31 @@
+/* src/styles/navbar.css */
+@font-face {
+  font-family: 'Blanka-Regular';
+  src: url('../fonts/Blanka-Regular.otf') format('opentype');
+}
+
+.navbar {
+  background-color: #f8f9fa; /* Color de fondo */
+  padding: 1rem; /* Espaciado alrededor del navbar */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Tamaño de fuente de la marca */
+  font-family: 'Blanka-Regular', Arial, sans-serif; /* Familia de fuentes */
+}
+
+.nav-link {
+  font-size: 1rem; /* Tamaño de fuente de los enlaces */
+  color: #000; /* Color de los enlaces */
+  margin-right: 1rem; /* Espaciado entre los enlaces */
+}
+
+.nav-link:hover {
+  color: #0056b3; /* Color al pasar el ratón por encima */
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: #f8f9fa; /* Color de fondo en dispositivos móviles */
+  }
+}

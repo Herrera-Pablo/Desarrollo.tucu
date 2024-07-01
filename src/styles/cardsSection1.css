@@ -1,0 +1,37 @@
+#cards-section1 {
+    padding: 50px;
+    text-align: center;
+    position: relative; /* Para posicionar elementos hijos relativos a este contenedor */
+}
+
+/* Estilos para el título */
+#cards-section1 h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    font-style: normal;
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    position: relative; /* Permitir posicionamiento relativo */
+    z-index: 2; /* Asegurar que el h2 esté por encima del fondo diagonal */
+}
+
+/* Estilos para .cards */
+.cards {
+    position: relative; /* Para posicionar elementos hijos relativos a este contenedor */
+    z-index: 1; /* Asegurar que las tarjetas estén por encima del fondo diagonal */
+}
+
+/* Fondo diagonal */
+#cards-section1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e60023; /* Color rojo */
+    z-index: 0; /* Para estar detrás del contenido */
+    clip-path: polygon(0 0, 100% 0, 0 100%); /* Forma diagonal */
+}

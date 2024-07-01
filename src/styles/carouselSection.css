@@ -1,0 +1,15 @@
+#carousel {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #eaeaea;
+}
+
+.carousel {
+    width: 80%;
+    height: 60%;
+    background: #fff;
+    /* Aquí puedes añadir más estilos para el carousel */
+}
