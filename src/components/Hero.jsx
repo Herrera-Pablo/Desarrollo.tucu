@@ -16,8 +16,8 @@ const Hero = () => {
 </div>
 
                 </div>
-                <div className="right-content logo-container">
-                    <img src={logob} alt="Logo IMG" className="logo-box animated-up-down" />
+                <div className="right-content logo-container animated-up-down">
+                    <h4 className='logo-text  animate__animated animate__zoomIn'>desarrollo.tucu</h4>
                 </div>
             </div>
         </section>

@@ -1,3 +1,10 @@
+/* Definición de la fuente Blanka-Regular */
+@font-face {
+    font-family: 'Blanka-Regular';
+    src: url('../fonts/Blanka-Regular.otf') format('opentype');
+}
+
+/* Estilos para el componente #hero */
 #hero {
     height: 100vh;
     background-color: rgba(44, 64, 97, 0.99); /* Fondo blanco con un pequeño tono opaco */
@@ -28,6 +35,14 @@
     text-align: center; /* Cambiado a izquierda */
     border-radius: 10px;
     padding: 5px;
+}
+
+.logo-text {
+    font-family: 'Blanka-Regular', Arial, sans-serif; /* Familia de fuentes */
+    font-weight: 400;
+    font-size: 80px;
+    color: white;
+    text-shadow: 1px 1px 5px black;
 }
 
 #hero h2 {
@@ -98,10 +113,10 @@
 }
 
 @media (max-width: 576px) {
-    #hero   h2 {
+    #hero h2 {
         font-size: 60px;
     }
-    #hero  h3 {
+    #hero h3 {
         font-size: 40px;
     }
     #hero .logo-container {
@@ -114,7 +129,7 @@
     #hero h2 {
         font-size: 50px;
     }
-    #hero  h3 {
+    #hero h3 {
         font-size: 30px;
     }
 }
@@ -125,18 +140,18 @@
 
 @-webkit-keyframes up-down {
     0% {
-        transform: translateY(10px);
+        transform: translateY(50px);
     }
     100% {
-        transform: translateY(-10px);
+        transform: translateY(-50px);
     }
 }
 
 @keyframes up-down {
     0% {
-        transform: translateY(10px);
+        transform: translateY(50px);
     }
     100% {
-        transform: translateY(-10px);
+        transform: translateY(-50px);
     }
 }
