@@ -59,7 +59,7 @@
         transform: translateY(0);
     }
     50% {
-        transform: translateY(0);
+        transform: translateY(-5px);
     }
 }
 
@@ -120,6 +120,7 @@
 #hero .logo-container {
     pointer-events: none;
     margin-top: -100px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column; /* Alinea text-logo-1 arriba de text-logo-2 */
     align-items: center; /* Centra ambos logos */
