@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     padding: 5px;
+    padding-bottom: 50px;
 }
 
 .hero-content {
@@ -58,7 +59,7 @@
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-5px);
+        transform: translateY(0);
     }
 }
 
