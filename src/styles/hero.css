@@ -1,13 +1,7 @@
-/* Definición de la fuente Blanka-Regular */
-@font-face {
-    font-family: 'Blanka-Regular';
-    src: url('../fonts/Blanka-Regular.otf') format('opentype');
-}
-
 /* Estilos para el componente #hero */
 #hero {
     height: 100vh;
-    background-color: rgba(44, 64, 97, 0.99); /* Fondo blanco con un pequeño tono opaco */
+    background-color: rgba(44, 64, 97, 0.99);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,18 +25,73 @@
     justify-content: center;
 }
 
+#hero .right-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Asegura que el position: absolute funcione */
+}
+.arrow-down-container {
+    position: absolute;
+    bottom: 6%; /* Posiciona la flecha y el texto al borde inferior */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow-text {
+    font-size: 1em;
+    margin-bottom: -25px;
+    color: #ffc87b;
+    animation: bounce 2s infinite; /* Aplica la animación */
+}
+
+.arrow-down {
+    font-size: 3em; /* Tamaño más grande */
+    color: #ffc87b; /* Color personalizado */
+    animation: bounce 2s infinite; /* Aplica la animación */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 #hero .text-box {
-    text-align: center; /* Cambiado a izquierda */
+    text-align: center;
     border-radius: 10px;
     padding: 5px;
 }
 
 .logo-text {
-    font-family: 'Blanka-Regular', Arial, sans-serif; /* Familia de fuentes */
+    font-family: 'Blanka-Regular', Arial, sans-serif;
     font-weight: 400;
-    font-size: 80px;
+    font-size: 5em;
     color: white;
     text-shadow: 1px 1px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.icon {
+    font-size: 0.8em;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    left: 130%;
+    transform: translate(-50%, -50%);
+}
+ .text-logo-2 {
+     right: 30px;
 }
 
 #hero h2 {
@@ -57,7 +106,7 @@
 
 #hero h3 {
     font-family: "Bebas Neue", sans-serif;
-    text-align: left;
+    text-align: center; /* Centrando el texto h3 */
     font-weight: 400;
     font-size: 40px;
     font-style: normal;
@@ -68,13 +117,11 @@
 }
 
 #hero .logo-container {
-    pointer-events: none; /* Desactiva los eventos de clic */
-}
-
-#hero .logo-box {
-    width: 100%;
-    max-width: 800px; /* Ajustar según la necesidad */
-    height: auto;
+    pointer-events: none;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column; /* Alinea text-logo-1 arriba de text-logo-2 */
+    align-items: center; /* Centra ambos logos */
 }
 
 /* Breakpoints para dispositivos más pequeños */
@@ -105,10 +152,10 @@
     }
     #hero h3 {
         font-size: 45px;
+        text-align: center;
     }
-    #hero .logo-container {
-        margin-top: -200px;
-        pointer-events: none; /* Desactiva los eventos de clic */
+    .logo-text {
+        font-size: 4em;
     }
 }
 
@@ -118,10 +165,10 @@
     }
     #hero h3 {
         font-size: 40px;
+        text-align: center;
     }
-    #hero .logo-container {
-        margin-top: -100px;
-        pointer-events: none; /* Desactiva los eventos de clic */
+    .logo-text {
+        font-size: 3em;
     }
 }
 
@@ -131,27 +178,9 @@
     }
     #hero h3 {
         font-size: 30px;
+        text-align: center;
     }
-}
-
-#hero .animated-up-down {
-    animation: up-down 1s ease-in-out infinite alternate-reverse both;
-}
-
-@-webkit-keyframes up-down {
-    0% {
-        transform: translateY(50px);
-    }
-    100% {
-        transform: translateY(-50px);
-    }
-}
-
-@keyframes up-down {
-    0% {
-        transform: translateY(50px);
-    }
-    100% {
-        transform: translateY(-50px);
+    .logo-text {
+        font-size: 2em;
     }
 }
