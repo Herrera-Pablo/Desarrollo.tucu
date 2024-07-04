@@ -1,66 +1,38 @@
-/* Estilos para el componente #hero */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 #hero {
     height: 100vh;
     background-color: rgba(44, 64, 97, 0.99);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 5px;
-    padding-bottom: 50px;
 }
 
 .hero-content {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100%;
+    flex: 1;
     align-items: center;
     justify-content: space-between;
 }
 
 #hero .left-content,
 #hero .right-content {
+    padding: 25px;
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#hero .right-content {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative; /* Asegura que el position: absolute funcione */
-}
-.arrow-down-container {
-    position: absolute;
-    bottom: 6%; /* Posiciona la flecha y el texto al borde inferior */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.arrow-text {
-    font-size: 1em;
-    margin-bottom: -25px;
-    color: #ffc87b;
-    animation: bounce 2s infinite; /* Aplica la animación */
-}
-
-.arrow-down {
-    font-size: 3em; /* Tamaño más grande */
-    color: #ffc87b; /* Color personalizado */
-    animation: bounce 2s infinite; /* Aplica la animación */
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
 }
 
 #hero .text-box {
@@ -80,7 +52,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    
 }
 
 .icon {
@@ -91,8 +62,9 @@
     left: 130%;
     transform: translate(-50%, -50%);
 }
- .text-logo-2 {
-     right: 30px;
+
+.text-logo-2 {
+    right: 30px;
 }
 
 #hero h2 {
@@ -107,7 +79,7 @@
 
 #hero h3 {
     font-family: "Bebas Neue", sans-serif;
-    text-align: center; /* Centrando el texto h3 */
+    text-align: center;
     font-weight: 400;
     font-size: 40px;
     font-style: normal;
@@ -119,11 +91,28 @@
 
 #hero .logo-container {
     pointer-events: none;
-    margin-top: -100px;
-    padding-bottom: 20px;
     display: flex;
-    flex-direction: column; /* Alinea text-logo-1 arriba de text-logo-2 */
-    align-items: center; /* Centra ambos logos */
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow-down-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: bounce 2s infinite;
+    margin-bottom: 20px;
+}
+
+.arrow-text {
+    font-size: 1em;
+    color: #ffc87b;
+    margin-bottom: -20px;
+}
+
+.arrow-down {
+    font-size: 5em; /* Tamaño del icono de la flecha aumentado */
+    color: #ffc87b;
 }
 
 /* Breakpoints para dispositivos más pequeños */

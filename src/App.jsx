@@ -15,6 +15,10 @@ import Page4 from './pages/Page4';
 import Page5 from './pages/Page5';
 import Error404 from './pages/error404';
 import 'animate.css';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
 const App = () => {
     return (

@@ -15,20 +15,20 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="right-content logo-container animate__slow animate__animated animate__bounceInRight">
-    <h4 className="text-logo-1 logo-text animate__animated animate__zoomIn">
-        desarrollo
-    </h4>
-    <h4 className="text-logo-2 logo-text animate__animated animate__zoomIn">
-        .tucu
-        <i className="fas fa-desktop icon"></i>
-    </h4>
-    <div className="arrow-down-container">
-        <div className="arrow-text">Sigue Bajando</div>
-        <div className="arrow-down">
-            <i className="fas fa-caret-down"></i> {/* Icono de flecha hacia abajo */}
-        </div>
-    </div>
-</div>
+                    <h4 className="text-logo-1 logo-text animate__animated animate__zoomIn">
+                        desarrollo
+                    </h4>
+                    <h4 className="text-logo-2 logo-text animate__animated animate__zoomIn">
+                        .tucu
+                        <i className="fas fa-desktop icon"></i>
+                    </h4>
+                </div>
+            </div>
+            <div className="arrow-down-container">
+                <div className="arrow-text">Sigue bajando</div>
+                <div className="arrow-down">
+                    <i className="fas fa-caret-down"></i> {/* Icono de flecha hacia abajo */}
+                </div>
             </div>
         </section>
     );
