@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 5px;
+    overflow: hidden; /* Asegura que no haya scroll */
 }
 
 .hero-content {
@@ -139,10 +140,10 @@
         flex-direction: column;
     }
     #hero h2 {
-        font-size: 70px;
+        font-size: 50px; /* Ajustar tamaño de fuente para móviles */
     }
     #hero h3 {
-        font-size: 45px;
+        font-size: 30px; /* Ajustar tamaño de fuente para móviles */
         text-align: center;
     }
     .logo-text {
@@ -152,10 +153,10 @@
 
 @media (max-width: 576px) {
     #hero h2 {
-        font-size: 60px;
+        font-size: 40px; /* Ajustar tamaño de fuente para móviles */
     }
     #hero h3 {
-        font-size: 40px;
+        font-size: 25px; /* Ajustar tamaño de fuente para móviles */
         text-align: center;
     }
     .logo-text {
@@ -165,10 +166,10 @@
 
 @media (max-width: 400px) {
     #hero h2 {
-        font-size: 50px;
+        font-size: 30px; /* Ajustar tamaño de fuente para móviles */
     }
     #hero h3 {
-        font-size: 30px;
+        font-size: 20px; /* Ajustar tamaño de fuente para móviles */
         text-align: center;
     }
     .logo-text {
