@@ -64,6 +64,7 @@ const ContactForm = () => {
 
   return (
     <div id="section-contact">
+      <h2>Completa el formulario y solicita tu sitio ahora</h2>
       <div className="contact-form-container">
         {!isSubmitted && (
           <form id="contact-form" onSubmit={handleSubmit}>
@@ -100,7 +101,7 @@ const ContactForm = () => {
               pattern="[0-9]*"
             />
             {errors.Celular && <span className="error">{errors.Celular}</span>}
-            <div className='subtitle-form-contact'><h3>Elije el tipo:</h3></div>
+            <div className='subtitle-form-contact'><h3>Tipo de Sitio:</h3></div>
             <div className="radio-group">
                 
               <input
@@ -137,7 +138,7 @@ const ContactForm = () => {
 
             <textarea
               name="DescripcionSitio"
-              placeholder="Breve Descripción del Sitio y/o Negocio"
+              placeholder="Breve descripción del Sitio que buscás"
               value={formData.DescripcionSitio}
               onChange={handleChange}
               required

@@ -1,23 +1,35 @@
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 #hero {
-    height: 100vh;
-    background-color: rgba(44, 64, 97, 0.99); /* Fondo blanco con un pequeño tono opaco */
+    height: calc(100vh - 40px); /* Restamos la altura del NavBar */
+    background-color: rgba(44, 64, 97, 0.99);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 5px;
+    overflow: hidden; /* Asegura que no haya scroll */
 }
 
 .hero-content {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100%;
+    flex: 1;
     align-items: center;
     justify-content: space-between;
 }
 
 #hero .left-content,
 #hero .right-content {
+    padding: 25px;
     flex: 1;
     display: flex;
     align-items: center;
@@ -25,9 +37,35 @@
 }
 
 #hero .text-box {
-    text-align: center; /* Cambiado a izquierda */
+    text-align: center;
     border-radius: 10px;
     padding: 5px;
+}
+
+.logo-text {
+    font-family: 'Blanka-Regular', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 5em;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.icon {
+    font-size: 0.8em;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    left: 130%;
+    transform: translate(-50%, -50%);
+}
+
+.text-logo-2 {
+    right: 30px;
 }
 
 #hero h2 {
@@ -42,7 +80,7 @@
 
 #hero h3 {
     font-family: "Bebas Neue", sans-serif;
-    text-align: left;
+    text-align: center;
     font-weight: 400;
     font-size: 40px;
     font-style: normal;
@@ -53,13 +91,29 @@
 }
 
 #hero .logo-container {
-    pointer-events: none; /* Desactiva los eventos de clic */
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#hero .logo-box {
-    width: 100%;
-    max-width: 800px; /* Ajustar según la necesidad */
-    height: auto;
+.arrow-down-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: bounce 2s infinite;
+    margin-bottom: 20px;
+}
+
+.arrow-text {
+    font-size: 1em;
+    color: #ffc87b;
+    margin-bottom: -20px;
+}
+
+.arrow-down {
+    font-size: 5em; /* Tamaño del icono de la flecha aumentado */
+    color: #ffc87b;
 }
 
 /* Breakpoints para dispositivos más pequeños */
@@ -83,60 +137,52 @@
 
 @media (max-width: 768px) {
     .hero-content {
+        height: 99vh;
         flex-direction: column;
+        justify-content: center; /* Centramos el contenido */
     }
+    #hero .left-content,
+    #hero .right-content {
+        padding-top: 10px; /* Reducimos el padding */
+    }
+    #hero .right-content {
+        margin-top: -50px;
+    }
+
     #hero h2 {
-        font-size: 70px;
+        font-size: 50px; /* Ajustar tamaño de fuente para móviles */
     }
     #hero h3 {
-        font-size: 45px;
+        font-size: 30px; /* Ajustar tamaño de fuente para móviles */
+        text-align: center;
     }
-    #hero .logo-container {
-        margin-top: -200px;
-        pointer-events: none; /* Desactiva los eventos de clic */
+    .logo-text {
+        font-size: 4em;
     }
 }
 
 @media (max-width: 576px) {
-    #hero   h2 {
-        font-size: 60px;
+    #hero h2 {
+        font-size: 40px; /* Ajustar tamaño de fuente para móviles */
     }
-    #hero  h3 {
-        font-size: 40px;
+    #hero h3 {
+        font-size: 25px; /* Ajustar tamaño de fuente para móviles */
+        text-align: center;
     }
-    #hero .logo-container {
-        margin-top: -100px;
-        pointer-events: none; /* Desactiva los eventos de clic */
+    .logo-text {
+        font-size: 3em;
     }
 }
 
 @media (max-width: 400px) {
     #hero h2 {
-        font-size: 50px;
+        font-size: 30px; /* Ajustar tamaño de fuente para móviles */
     }
-    #hero  h3 {
-        font-size: 30px;
+    #hero h3 {
+        font-size: 20px; /* Ajustar tamaño de fuente para móviles */
+        text-align: center;
     }
-}
-
-#hero .animated-up-down {
-    animation: up-down 1s ease-in-out infinite alternate-reverse both;
-}
-
-@-webkit-keyframes up-down {
-    0% {
-        transform: translateY(10px);
-    }
-    100% {
-        transform: translateY(-10px);
-    }
-}
-
-@keyframes up-down {
-    0% {
-        transform: translateY(10px);
-    }
-    100% {
-        transform: translateY(-10px);
+    .logo-text {
+        font-size: 2em;
     }
 }

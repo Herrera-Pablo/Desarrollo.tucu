@@ -4,19 +4,21 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import AboutUs from './components/AboutUs';
-// import CarouselSection from './components/CarouselSection';
 import CardsSection1 from './components/CardsSection1';
 import CardsSection2 from './components/CardsSection2';
 import Contact from './components/Contact';
 import FeaturesSection from './components/FeaturesSection';
-// import TestimonialsSection from './components/TestimonialsSection';
-// import CTASection from './components/CTASection';
 import Page1 from './pages/Page1';
 import Page2 from './pages/Page2';
 import Page3 from './pages/Page3';
 import Page4 from './pages/Page4';
 import Page5 from './pages/Page5';
+import Error404 from './pages/error404';
 import 'animate.css';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
 const App = () => {
     return (
@@ -29,6 +31,7 @@ const App = () => {
                     <Route path="/page3" element={<Page3 />} />
                     <Route path="/page4" element={<Page4 />} />
                     <Route path="/page5" element={<Page5 />} />
+                    <Route path="*" element={<Error404 />} /> {/* Ruta comodín para 404 */}
                 </Routes>
             </div>
         </Router>
@@ -47,24 +50,15 @@ const HomePage = () => {
             <section id="features">
                 <FeaturesSection />
             </section>
-          {/*   <section id="cta">
-                <CTASection />
-            </section>
-            <section id="carousel">
-                <CarouselSection />
-            </section>
-            <section id="testimonials">
-                <TestimonialsSection />
-            </section>*/}
             <section id="cards1">
                 <CardsSection1 />
             </section>
-           {/*  <section id="cards2">
+            <section id="cards2">
                 <CardsSection2 />
             </section>
             <section id="about">
                 <AboutUs />
-            </section> */}
+            </section>
             <section id="contact">
                 <Contact />
             </section>
