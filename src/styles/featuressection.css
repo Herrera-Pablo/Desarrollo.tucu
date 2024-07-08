@@ -1,5 +1,5 @@
 #features {
-    background: #f9f9f9;
+    background: #f7f7f7;
     text-align: center;
     min-height: 100vh;
     font-family: 'Philosopher', sans-serif;
@@ -8,16 +8,18 @@
 }
 
 #features h2 {
+    padding-top: 10px;
     font-size: 2.5em;
     margin-bottom: 30px;
     color: #222;
+    letter-spacing: 3px;
 }
 
 .features-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 60px; /* Increased gap between columns */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -25,15 +27,18 @@
 .feature-column {
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     padding: 20px;
     width: 100%;
     max-width: 350px;
     text-align: left;
     position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
+    overflow: hidden;
 }
 
 .feature-column h3 {
+    font-weight: bold;
     font-size: 1.5em;
     margin-bottom: 15px;
     color: #27ae60;
@@ -52,24 +57,55 @@
     position: relative;
     padding-left: 30px;
     line-height: 1.5;
+    color: #555; /* Improved contrast color */
 }
-
-.feature-column li::before {
-    content: "✓";
+.feature-column li .fa-icon {
     color: #27ae60;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.5em;
 }
 
-.feature-image {
-    padding: 20px;
-    display: block;
-    margin: 20px auto 0;
-    max-width: 50%;
-    height: auto;
+.feature-column li strong {
+    font-weight: bold;
+    color: #333; /* Darker color for strong text */
+}
+
+.feature-column:hover {
+    transform: scale(1.2) translateY(20px); /* Increased translateY value */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    z-index: 10; /* Ensures the hovered column is on top */
+}
+
+.feature-column::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(45deg, transparent, #27ae5f72, transparent); /* More opaque */
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+
+.feature-column:hover::before {
+    animation: shine 0.5s ease forwards; /* Faster animation */
+    opacity: 1;
+}
+
+@keyframes shine {
+    0% {
+        top: -200%;
+        left: -200%;
+    }
+    50% {
+        top: 50%;
+        left: 50%;
+    }
+    100% {
+        top: 200%;
+        left: 200%;
+    }
 }
 
 .contact-button {
@@ -92,23 +128,10 @@
 .contact-button a:hover {
     background-color: #219150;
 }
-:root {
-    --animate-duration: 1s; /* Puedes ajustar la duración según tu preferencia */
-}
 
-.feature-column:nth-child(1) .feature-image {
-    --animate-delay: 0s;
-}
-
-.feature-column:nth-child(2) .feature-image {
-    --animate-delay: 5s;
-}
-
-.feature-column:nth-child(3) .feature-image {
-    --animate-delay: 10s;
-}
-.feature-image {
-    animation: animate__headShake infinite;
-    animation-duration: var(--animate-duration);
-    animation-play-state: paused;
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .features-content {
+        gap: 40px; /* Decreased gap between columns for mobile */
+    }
 }
