@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
 * {
     margin: 0;
@@ -15,6 +16,16 @@
 html, body {
     scroll-behavior: smooth;
     overflow-x: hidden; /* Evita el scroll horizontal */
+    height: 100%;
+    width: 100%;
+}
+
+#root {
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+    background-color: #2c4061fc;
+    height: 100%;
+    width: 100%;
 }
 
 .bebas-neue-regular {
@@ -23,13 +34,20 @@ html, body {
     font-style: normal;
 }
 
+.alfa-slab-one-regular {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
 .container-links-app, .container-section-app {
     width: 100%;
     overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    background-color: transparent; /* Asegura la transparencia del fondo */
 }
 
-/* Revisa los estilos específicos para asegurarte de que no haya desbordamiento */
 section {
     width: 100vw; /* Asegura que las secciones no se desborden del viewport */
     overflow-x: hidden;
+    background-color: transparent; /* Fondo transparente para secciones */
 }
