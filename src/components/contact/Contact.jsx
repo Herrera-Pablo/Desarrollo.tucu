@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './contact.css';
-import successImage from '../../assets/img/client (2).jpg';
+import successImage from '../../assets/gif/check.gif';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({

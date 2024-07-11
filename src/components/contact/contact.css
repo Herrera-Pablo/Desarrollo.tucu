@@ -107,7 +107,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: white; /* Fondo blanco */
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 10px;
@@ -115,7 +115,7 @@
 }
 
 .confirmation-text {
-  text-align: left;
+  text-align: center; /* Texto centrado */
   margin-bottom: 20px;
 }
 
@@ -126,7 +126,8 @@
 }
 
 .confirmation-image {
-  width: 250px;
+  width: 100%; /* Imagen responsive */
+  max-width: 250px;
   border-radius: 10px;
   margin-top: 20px;
 }
@@ -179,7 +180,18 @@
   }
 
   .confirmation-image {
-    width: 200px;
+    width: 100%; /* Imagen responsive */
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+  .confirmation {
+    width: 50%; /* Ajuste de ancho para pantallas entre 700px y 1000px */
+  }
+
+  .confirmation-image {
+    max-width: 200px;
   }
 }
 
