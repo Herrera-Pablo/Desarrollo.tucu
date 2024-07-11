@@ -28,7 +28,8 @@
     font-family: "Alfa Slab One", serif;
     font-weight: 400;
     margin: 0 0 10px;
-    color: #ffc87b; /* Color vibrante */
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1); /* Sombra para el texto */
+    color: #ff9500; /* Color más fuerte */
+
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 1); /* Sombra para el texto */
     text-align: center; /* Centrar el texto */
 }
