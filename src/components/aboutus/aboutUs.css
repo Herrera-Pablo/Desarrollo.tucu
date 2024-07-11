@@ -1,3 +1,14 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
 #about-us {
     height: 100vh;
     display: flex;
@@ -6,4 +17,89 @@
     align-items: center;
     background: #f4f4f4;
     text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.about-us-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.about-text-container {
+    flex: 1;
+    padding: 25px;
+    text-align: left;
+}
+
+.about-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-description {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.about-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 992px) {
+    .about-us-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text-container {
+        text-align: center;
+        padding: 10px;
+    }
+    .about-title {
+        font-size: 40px;
+    }
+    .about-description {
+        font-size: 18px;
+    }
+    .about-image-container {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 35px;
+    }
+    .about-description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-title {
+        font-size: 30px;
+    }
+    .about-description {
+        font-size: 14px;
+    }
 }
