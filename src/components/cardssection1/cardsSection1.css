@@ -1,0 +1,90 @@
+/* cardsSection1.css */
+#cards-section1 {
+    padding: 50px;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilos para el título */
+#cards-section1 h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    font-style: normal;
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilos para .cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos para las columnas */
+.card-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-column > * {
+    flex: 1;
+}
+
+/* Estilos para el modal */
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    color: #333;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+/* Estilos para el carrusel */
+.carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Estilos generales */
+h2, .modal-title {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+@media (max-width: 768px) {
+    #cards-section1 h2 {
+        font-size: 60px;
+    }
+
+    .carousel-item img {
+        max-height: 200px;
+    }
+}

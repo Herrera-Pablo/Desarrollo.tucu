@@ -1,0 +1,34 @@
+/* card1.css */
+.card1 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease; /* Transición para el efecto hover */
+}
+
+.card1:hover {
+    transform: translateY(-5px); /* Levantar la tarjeta 5px al pasar el mouse */
+}
+
+.card1 img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    padding: 10px; /* Padding alrededor de la imagen */
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center; /* Centrar el contenido dentro de .card-content */
+}
+
+.card1-title {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    margin: 0 0 10px;
+    color: #ffc87b; /* Color vibrante */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1); /* Sombra para el texto */
+    text-align: center; /* Centrar el texto */
+}
