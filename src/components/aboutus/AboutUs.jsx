@@ -1,5 +1,6 @@
 import React from 'react';
 import './aboutUs.css';
+import diseño from '../../assets/img/diseño.png';
 
 const AboutUs = () => {
     return (
@@ -8,12 +9,14 @@ const AboutUs = () => {
                 <div className="about-text-container">
                     <h2 className="about-title animate__animated animate__fadeInUp">Quiénes Somos</h2>
                     <p className="about-description animate__animated animate__fadeInUp animate__delay-1s">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Apasionados por ayudar a pequeños comercios y emprendimientos a tener una presencia digital efectiva. 
+                        Nos especializamos en crear soluciones simples, accesibles y funcionales que permiten a nuestros clientes destacarse en el mundo digital. 
+                        Nos enfocamos en ofrecer un diseño limpio y atractivo, siempre priorizando la usabilidad y la experiencia del usuario, para que cada proyecto 
+                        impulse el crecimiento de tu negocio.
                     </p>
                 </div>
                 <div className="about-image-container animate__animated animate__fadeInUp animate__delay-2s">
-                    <img src="https://via.placeholder.com/400" alt="About Us" className="about-image"/>
+                    <img src={diseño} alt="About Us" className="about-image"/>
                 </div>
             </div>
         </section>

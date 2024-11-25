@@ -3,7 +3,7 @@ import './footer.css';
 const Footer = () => {
     return (
         <footer>
-            <p>&copy; 2024 Our Company. All rights reserved.</p>
+            <p className="designer">Designed by <a href="https://www.linkedin.com/in/pablogastonherrera" target="_blank" rel="noopener noreferrer">Pablo Herrera</a></p>
         </footer>
     );
 };
