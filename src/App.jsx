@@ -53,9 +53,7 @@ const HomePage = () => {
             <section id="cards1">
                 <CardsSection1 />
             </section>
-            <section id="cards2">
-                <CardsSection2 />
-            </section>
+
             <section id="about">
                 <AboutUs />
             </section>
